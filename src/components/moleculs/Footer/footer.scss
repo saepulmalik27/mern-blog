@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-primary);
+}
+.copyright{
+    text-align: center;
+    color: var(--color-secondary);
+   background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}

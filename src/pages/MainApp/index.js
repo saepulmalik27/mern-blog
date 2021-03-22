@@ -3,11 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../Home";
 import CreateContent from "../CreateContent";
 import CreateBlog from "../CreateBlog";
+import { Footer, Header } from "../../components";
+import './mainapp.scss';
 
 const MainApp = () => {
   return (
-    <div>
-      <p>Header</p>
+    <div className="main-app--wrapper">
+      <Header/>
+      <div className="content-wrapper">
       <Router>
         <Switch>
           <Route path="/create-blog">
@@ -21,7 +24,9 @@ const MainApp = () => {
           </Route>
         </Switch>
       </Router>
-      <p>Footer</p>
+      </div>
+      
+      <Footer/>
     </div>
   );
 };
