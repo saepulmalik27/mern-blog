@@ -1,0 +1,17 @@
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    .label{
+        color: var(--color-secondary);
+    }
+
+    .input{
+        margin: 8px 0px;
+        border: 1px solid grey;
+        padding: 12px;
+        border-radius: 8px;
+        outline: none;
+        box-sizing: inheret;
+    }
+}

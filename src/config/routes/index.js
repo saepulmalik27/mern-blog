@@ -3,10 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {Login, Home, Register} from '../../pages'
 const Routes = () => {
   return (
-    <div>
       <Router>
         <Switch>
-          <Route path="/login">
+          <Route path="/login" className="root">
               <Login/>
           </Route>
           <Route path="/register">
@@ -17,7 +16,6 @@ const Routes = () => {
           </Route>
         </Switch>
       </Router>
-    </div>
   );
 };
 
